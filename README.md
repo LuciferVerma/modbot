@@ -1,5 +1,4 @@
-# Raynty Official Discord bot
-<br>
+## Raynty Official Discord bot<br>
 - Moderation<br>
 - Levels <br>
 <br>
