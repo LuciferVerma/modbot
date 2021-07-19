@@ -12,7 +12,7 @@ module.exports = {
     }
     
     if(!message.guild.me.hasPermission("BAN_MEMBERS")) {
-      return message.channel.send(`**${message.author.username}**, I am do not have perms to ban someone`)
+      return message.channel.send(`**${message.author.username}**, I do not have perms to ban someone`)
     }
     
     const target = message.mentions.members.first();
@@ -28,7 +28,7 @@ module.exports = {
    
     
    if(!args[1]) {
-     return message.channel.send(`**${message.author.username}**, Please Give Reason To ban Member`)
+     return message.channel.send(`**${message.author.username}**, Please a give a reason to ban Member`)
    }
     
     let embed = new discord.MessageEmbed()
