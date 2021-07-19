@@ -17,11 +17,11 @@ module.exports = {
     } 
     
     if(args[1]) {
-      return message.channel.send("You can not set prefix a double argument")
+      return message.channel.send("You can not set prefix as a double argument")
     }
     
     if(args[0].length > 3) {
-      return message.channel.send("You can not send prefix more than 3 characters")
+      return message.channel.send("You cannot a send prefix more than 3 characters")
     }
     
     if(args.join("") === default_prefix) {
