@@ -16,7 +16,7 @@ module.exports = {
 
     if (!user) {
       return message.channel.send(
-        "Please mention the member to who you want to unmute"
+        "Please mention the member that you want to unmute"
       );
     }
     
@@ -24,7 +24,7 @@ module.exports = {
     
     
  if(user.roles.cache.has(muterole)) {
-      return message.channel.send("Given User do not have mute role so what i am suppose to take")
+      return message.channel.send("Given User does not have mute role so what i am suppose to take")
     }
     
     
