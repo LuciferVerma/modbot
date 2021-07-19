@@ -43,7 +43,7 @@ client.on("message", async message => {
     
     if(is_url(message.content) === true) {
       message.delete()
-      return message.channel.send("You can not send link here :/")
+      return message.channel.send("You can not send links here :/")
     }
     
     
@@ -71,7 +71,7 @@ client.on('messageDelete', function(message, channel){
     
     if(confirm) {
       message.delete()
-      return message.channel.send("You are not allowed to send badwords here")
+      return message.channel.send("You are not allowed to send bad words here")
     }    
     
     
