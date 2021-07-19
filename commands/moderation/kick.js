@@ -8,11 +8,11 @@ module.exports = {
   run: (client, message, args) => {
     
     if(!message.member.hasPermission("KICK_MEMBERS")) {
-      return message.channel.send(`**${message.author.username}**, You do not have enough permission to use this command`)
+      return message.channel.send(`**${message.author.username}**, You do not have enough permissions to use this command`)
     }
     
     if(!message.guild.me.hasPermission("KICK_MEMBERS")) {
-      return message.channel.send(`**${message.author.username}**, I do not have enough permission to use this command`)
+      return message.channel.send(`**${message.author.username}**, I do not have enough permissions to use this command`)
     }
     
     let target = message.mentions.members.first();
@@ -26,7 +26,7 @@ module.exports = {
     }
     
   if(!args[1]) {
-    return message.channel.send(`**${message.author.username}**, Please Give Reason to kick`)
+    return message.channel.send(`**${message.author.username}**, Please give a reason you want to kick`)
   }
     
     let embed = new discord.MessageEmbed()
