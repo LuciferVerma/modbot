@@ -15,7 +15,7 @@ module.exports = {
     const user = message.mentions.members.first()
     
     if(!user) {
-      return message.channel.send("Please Mention the person to who you want to warn - warn @mention <reaosn>")
+      return message.channel.send("Please Mention the person who you want to warn - warn @mention <reaosn>")
     }
     
     if(message.mentions.users.first().bot) {
