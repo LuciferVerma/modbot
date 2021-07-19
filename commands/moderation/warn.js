@@ -19,11 +19,11 @@ module.exports = {
     }
     
     if(message.mentions.users.first().bot) {
-      return message.channel.send("You can not warn bots")
+      return message.channel.send("You cannot warn bots")
     }
     
     if(message.author.id === user.id) {
-      return message.channel.send("You can not warn yourself")
+      return message.channel.send("You cannot warn yourself")
     }
     
     if(user.id === message.guild.owner.id) {
