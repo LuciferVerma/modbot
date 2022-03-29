@@ -3,7 +3,7 @@ const discord = require('discord.js')
 const { getInfo } = require("../../handlers/xp.js")
 module.exports = {
   name: "level",
-  description: "Get the level of author or mentioned",
+  description: "Get the level of author or mentioned user",
   usage: "level <user>",
   category: "info",
   run: (client, message, args) => {
@@ -14,7 +14,7 @@ module.exports = {
     }
     
     if(user.bot) {
-      return message.channel.send("Bot do not have levels")
+      return message.channel.send("Bots do not have levels")
     }
     
     let xp = db.get(`xp_${user.id}_${message.guild.id}`) || 0;

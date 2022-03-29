@@ -10,15 +10,15 @@ module.exports = {
     
     //OWNER ONLY COMMAND
     if(!message.author.id === "YOUR ID") {
-      return message.channel.send("This command can only be used by owner")
+      return message.channel.send("This command can only be used by the owner")
     }
     //ARGUMENT
     if(!args.length) {
-      return message.channel.send("Please give status message")
+      return message.channel.send("Please provide a status message")
     }
     
  db.set(`status`, args.join(" "))
-   await message.channel.send("Updated the bot status")
+   await message.channel.send("Updated the bots status")
     process.exit(1);
     
   }

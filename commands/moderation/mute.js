@@ -2,7 +2,7 @@ const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "mute",
-  description: "Mute anyone who break rules",
+  description: "Mute anyone who breaks rules",
   category: "moderation",
   usage: "mute <@mention> <reason>",
   run: async (client, message, args) => {
@@ -19,7 +19,7 @@ module.exports = {
     const user = message.mentions.members.first();
     
     if(!user) {
-      return message.channel.send("Please mention the member to who you want to mute")
+      return message.channel.send("Please mention the member who you want to mute")
     }
     
     if(user.id === message.author.id) {
@@ -40,7 +40,7 @@ module.exports = {
     
     
       if(!muterole) {
-      return message.channel.send("This server do not have role with name `Muted`")
+      return message.channel.send("This server does not have role with name `Muted`")
     }
     
     

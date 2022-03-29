@@ -15,15 +15,15 @@ module.exports = {
     const user = message.mentions.members.first()
     
     if(!user) {
-      return message.channel.send("Please Mention the person to who you want to warn - warn @mention <reaosn>")
+      return message.channel.send("Please Mention the person who you want to warn - warn @mention <reaosn>")
     }
     
     if(message.mentions.users.first().bot) {
-      return message.channel.send("You can not warn bots")
+      return message.channel.send("You cannot warn bots")
     }
     
     if(message.author.id === user.id) {
-      return message.channel.send("You can not warn yourself")
+      return message.channel.send("You cannot warn yourself")
     }
     
     if(user.id === message.guild.owner.id) {
